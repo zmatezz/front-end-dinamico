@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <button id="menos" onclick="decrementar()">-</button>
+    <span>0</span>
+    <button id="mais" onclick="incrementar()">+</button>
+  </body>
+
+  <script>
+    let contador = 0;
+
+    function atualizar() {
+      const span = document.querySelector("span");
+      span.textContent = contador;
+    }
+
+    function incrementar() {
+      contador++;
+      /* Também funcionaria contador = contador + 1; */
+      atualizar();
+    }
+
+    function decrementar() {
+      if (contador > 0) {
+        contador--;
+        /* Também funcionaria contador = contador - 1; */
+        atualizar();
+      }
+    }
+  </script>
+</html>
