@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch",
+    "build": "tailwindcss build ./src/assets/css/style.css -o ./dist/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "glob-all": "^3.3.1",
     "jsdom": "^22.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
