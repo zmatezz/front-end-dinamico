@@ -66,3 +66,10 @@ function validarIdade(input) {
       break;
   }
 }
+
+function validarSelecao(selectElement) {
+  var selectedOption = selectElement.options[selectElement.selectedIndex];
+  selectedOption.value !== ""
+    ? selectElement.classList.add("text-white")
+    : selectElement.classList.remove("text-white");
+}

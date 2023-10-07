@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./assets/js/style.css" />
     <link rel="stylesheet" href="./src/assets/css/style.css" />
+
   </head>
   <body>
     <main>
@@ -103,17 +104,21 @@
           <label>
             <select
               id="sexo"
-              class="bg-[#333] text-white placeholder:text-gray-400 w-full p-4 rounded-lg border-solid border-2 border-white/10 focus:border-[#9adc59] outline-0 transition-all delay-1200"
+              class="bg-[#333] focus:text-white text-gray-400 placeholder:text-gray-400 w-full p-4 rounded-lg border-solid border-2 border-white/10 focus:border-[#9adc59] outline-0 transition-all delay-1200"
               name="sexo"
               required
-              onchange="validarSexo(this)"
+              onchange="validarSelecao(this)"
             >
               <option value="" disabled selected hidden>
                 Escolha seu sexo
               </option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
+              <option  value="masculino">
+                Masculino
+              </option>
+              <option  value="feminino">
+                Feminino
+              </option>
+              <option  value="outro">Outro</option>
             </select></label
           >
 
